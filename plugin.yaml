@@ -1,0 +1,11 @@
+name: intern-discovery
+version: 1.0.0
+description: "Classify intern-ai discovery (discovery-api.intern-ai.org.cn) HTTP 429 quota windows as transient rate limits instead of permanent billing walls, so the turn backs off and the credential pool rotates keys."
+author: SingleVirgin
+license: MIT
+homepage: https://github.com/SingleVirgin/hermes-plugin-intern-discovery
+kind: standalone
+manifest_version: 2
+provides_hooks:
+  - transform_api_error_classification
+platforms: [windows, linux, macos]
